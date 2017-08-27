@@ -14,6 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<lombok.version>1.16.8</lombok.version>
     <dropwizard.version>1.0.0</dropwizard.version>
+		<dropwizard.guice.version>0.8.4.0</dropwizard.guice.version>
   </properties>
 
     <dependencyManagement>
@@ -30,11 +31,20 @@
 
   <dependencies>
 
+	<!-- Core Dropwizard -->
     <dependency>
         <groupId>io.dropwizard</groupId>
         <artifactId>dropwizard-core</artifactId>
     </dependency>
+  	
+  	<!-- Google inject -->
+	<dependency>
+	    <groupId>com.google.inject</groupId>
+	    <artifactId>guice</artifactId>
+	    <version>3.0</version>
+	</dependency>
   
+  	<!-- Lombok for utility annotations -->
 	<dependency>
 		<groupId>org.projectlombok</groupId>
 		<artifactId>lombok</artifactId>
